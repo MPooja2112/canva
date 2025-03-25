@@ -21,39 +21,40 @@
       </a>
       
       <style>
-        .canva-embed {
-          position: relative;
-          width: 100%;
-          max-width: 100%;
-          height: 0;
-          padding-top: 56.25%; /* Aspect ratio for 16:9 */
-          box-shadow: 0 2px 8px rgba(63, 69, 81, 0.16);
-          margin: 1.6em 0 0.9em;
-          border-radius: 8px;
-          overflow: hidden;
-        }
-      
-        .canva-embed iframe {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          top: 0;
-          left: 0;
-          border: none;
-        }
-        
-      
-        /* 🔹 Make it Full-Screen on Small Screens */
-        @media (max-width: 768px) {
-          .canva-embed {
-            height: 100vh; /* Full screen on mobile */
-            padding-top: 0; /* Remove aspect ratio constraint */
-          }
-      
-          .canva-embed iframe {
-            height: 100vh; /* Make iframe take full screen */
-          }
-        }
+      .canva-embed {
+  position: relative;
+  width: 90%; /* Increase width for better visibility */
+  max-width: 600px; /* Limit max size for responsiveness */
+  height: 0;
+  padding-top: 80%; /* Increase aspect ratio for larger display */
+  box-shadow: 0 2px 8px rgba(63, 69, 81, 0.16);
+  margin: 1.6em auto; /* Center horizontally */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.canva-embed iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: none;
+}
+
+/* 🔹 Full-Screen & Centered on Small Screens */
+@media (max-width: 768px) {
+  .canva-embed {
+    width: 100%;
+    height: 100vh; /* Make it full screen */
+    padding-top: 0; /* Remove aspect ratio restriction */
+  }
+
+  .canva-embed iframe {
+    height: 100vh; /* Make iframe take full screen */
+  }
+}
+
       </style>
       
 </body>
